@@ -15,7 +15,7 @@ jobs:
       - name: Login to GitHub Container Registry
         uses: docker/login-action@v2
         with:
-          registry: aksloadtestdemo.azurecr.io
+          registry: 13f057.azurecr.io
           username: ${{ secrets.ACR_LOGIN }}
           password: ${{ secrets.ACR_SECRET }}
       - name: Build and Push Docker Image
